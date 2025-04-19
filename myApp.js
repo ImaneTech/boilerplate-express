@@ -51,4 +51,13 @@ app.get('/now', (req, res, next) => {
 
 
 
+//9
+app.get("/:word/echo", (req,res) => {
+    res.json({"echo": req.params.word})
+}
+)
+
+
+
+
 module.exports = app;
